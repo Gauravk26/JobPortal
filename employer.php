@@ -1,6 +1,3 @@
-<?php
-   include('session.php');
-?>
 <html>
    
    <head>
@@ -67,9 +64,9 @@ while ($statement_select_job = mysql_fetch_assoc($result_select_job)) {
     $company_job= $statement_select_job["CompanyName"];
     $email_job  = $statement_select_job["Email"];
     $username_job = $statement_select_job["Username"];
-    $skill_1_emp = $statement_select_job["skills_1"];
-    $skill_2_emp = $statement_select_job["skills_2"];
-    $skill_3_emp = $statement_select_job["skills_3"];
+    $skill_1_emp = $statement_select_job["Skill_1"];
+    $skill_2_emp = $statement_select_job["Skill_2"];
+    $skill_3_emp = $statement_select_job["Skill_3"];
     $loc_job = $statement_select_job["Location"];
     $off_ctc_job = $statement_select_job["Offered_ctc"];
     $off_desg = $statement_select_job["Designation"];
