@@ -1,0 +1,101 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+   
+
+    <title>Contact Us</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    
+    <link href="css/style.css" rel="stylesheet">
+
+   
+  </head>
+
+  <body>
+
+    <nav  class="navbar navbar-inverse navbar-fixed-top ">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Jobism</a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li ><a href="index.html">Home</a></li>
+            <li><a href="jobseeker.php">Jobseeker</a></li>
+            <li><a href="employer.php">Employer</a></li>
+            <li class="active"><a href="#">Contact</a></li>
+            <li><a href="signup.html">Sign Up</a></li>
+          </ul>
+           <form class="navbar-form navbar-right" method="post" action="login.php">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Username" name="username_login">
+          <input type="Password" class="form-control" placeholder="Password" name="password_login">
+        </div>
+        <button type="submit" class="btn btn-default">Login</button>
+
+      </form>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+    <!-- jumbotron fluid -->
+
+
+<div class="container contact1 " id="contact">
+        
+        
+        <div class="row">
+            <div class="col-sm-5">
+                <p>Contact us and we'll get back to you within 24 hours.</p>
+                <p><span class="glyphicon glyphicon-map-marker"></span> Pune, India</p>
+                <p><span class="glyphicon glyphicon-phone"></span> +91 7038934290</p>
+                <p><span class="glyphicon glyphicon-envelope"></span> info@jobs.com</p>
+            </div>
+
+            <div class="col-sm-7">
+                <div class="row">
+                    <div class="col-sm-6 form-group">
+                        <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+                    </div>
+                    <div class="col-sm-6 form-group">
+                        <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+                    </div>
+                </div>
+                <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br>
+                <div class="row">
+                    <div class="col-sm-12 form-group">
+                        <button class="btn btn-default pull-right" type="submit">Send</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> <!-- Contact -->
+</div>
+
+
+    
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    
+    <script src="js/bootstrap.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    
+  </body>
+</html>
