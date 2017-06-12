@@ -71,7 +71,41 @@ while ($statement_select_job = mysql_fetch_assoc($result_select_job)) {
     $off_ctc_job = $statement_select_job["Offered_ctc"];
     $off_desg = $statement_select_job["Designation"];
 
-//code for front end
+ echo '<div class="container edit-5">';
+ echo  '<div class="panel panel-default">';
+ echo  '<div class="panel-heading"> 
+<div class ="row">
+   <div class = "col-md-6"><b>'.$company_job.'</b>-<i>'.$off_desg.'</i></div>
+
+<div class= "col-md-3 col-md-offset-3 text-center">
+ <a href="mailto:'.$email_job.'" class="btn btn-info" role="button">APPLY</a>
+
+</div>
+
+
+
+</div>
+
+ </div>';
+ echo  '<div class="panel-body">
+   <div class = "row">
+   <div class ="col-md-4">
+ <b>Prefered Skills</b>: '.$skill_1_emp.','.$skill_2_emp.','.$skill_3_emp.'
+</div>
+
+<div class ="col-md-4">
+ <b>Location</b>: '.$loc_job.'
+</div>
+
+<div class ="col-md-4">
+ <b>Ctc offered</b>: '.$off_ctc_job.'
+</div>
+
+</div>
+ </div>';
+ echo  '</div>';
+ echo   '</div>';
+
 
 }
 
