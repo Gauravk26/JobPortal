@@ -78,7 +78,7 @@ while ($statement_select = mysql_fetch_assoc($result_select)) {
    <div class = "col-md-6"><b>'.$name_emp.'</b>-<i>'.$curr_desg_emp.'</i></div>
 
 <div class= "col-md-3 col-md-offset-3 text-center">
- <a href="mailto:'.$email_emp.'" class="btn btn-info" role="button">Apply</a>
+ <a href="mailto:'.$email_emp.'" class="btn btn-info" role="button">HIRE</a>
 
 </div>
 
