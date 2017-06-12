@@ -71,10 +71,43 @@ while ($statement_select = mysql_fetch_assoc($result_select)) {
     $des_ctc_emp = $statement_select["desired_ctc"];
 
 //code for front end
+ echo '<div class="container edit-5">';
+ echo  '<div class="panel panel-default">';
+ echo  '<div class="panel-heading"> 
+<div class ="row">
+   <div class = "col-md-6"><b>'.$name_emp.'</b>-<i>'.$curr_desg_emp.'</i></div>
+
+<div class= "col-md-3 col-md-offset-3 text-center">
+ <a href="mailto:'.$email_emp.'" class="btn btn-info" role="button">Apply</a>
+
+</div>
+
+
+
+</div>
+
+ </div>';
+ echo  '<div class="panel-body">
+   <div class = "row">
+   <div class ="col-md-4">
+ <b>Skills</b>: '.$skill_1_emp.','.$skill_2_emp.','.$skill_3_emp.'
+</div>
+
+<div class ="col-md-4">
+ <b>Desired Location</b>: '.$des_loc_emp.'
+</div>
+
+<div class ="col-md-4">
+ <b>Desired Ctc</b>: '.$des_ctc_emp.'
+</div>
+
+</div>
+ </div>';
+ echo  '</div>';
+ echo   '</div>';
 
 }
-
-?>
-
+ ?>
 </body>
+</html>
 
