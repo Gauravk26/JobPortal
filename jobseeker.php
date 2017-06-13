@@ -75,16 +75,17 @@ while ($statement_select = mysql_fetch_assoc($result_select)) {
  echo  '<div class="panel panel-default">';
  echo  '<div class="panel-heading"> 
 <div class ="row">
-   <div class = "col-md-6"><b>'.$name_emp.'</b>-<i>'.$curr_desg_emp.'</i></div>
+   <div class = "col-md-4"><b>'.$name_emp.'</b>-<i>'.$curr_desg_emp.'</i></div>
 
-<div class= "col-md-3 col-md-offset-3 text-center">
- <a href="mailto:'.$email_emp.'" class="btn btn-info" role="button">HIRE</a>
+      <div class= "col-md-1 col-md-offset-7 ">
 
-</div>
+      
 
+              <a href="mailto:'.$email_emp.'" class="btn btn-info pull-right" role="button">HIRE</a>
 
+    </div>
 
-</div>
+  </div>
 
  </div>';
  echo  '<div class="panel-body">
