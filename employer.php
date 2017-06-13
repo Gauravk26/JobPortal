@@ -75,9 +75,9 @@ while ($statement_select_job = mysql_fetch_assoc($result_select_job)) {
  echo  '<div class="panel panel-default">';
  echo  '<div class="panel-heading"> 
 <div class ="row">
-   <div class = "col-md-6"><b>'.$company_job.'</b>-<i>'.$off_desg.'</i></div>
+   <div class = "col-md-4"><b>'.$company_job.'</b>-<i>'.$off_desg.'</i></div>
 
-<div class= "col-md-3 col-md-offset-3 text-center">
+<div class= "col-md-1 col-md-offset-7 ">
  <a href="mailto:'.$email_job.'" class="btn btn-info" role="button">APPLY</a>
 
 </div>
@@ -90,15 +90,15 @@ while ($statement_select_job = mysql_fetch_assoc($result_select_job)) {
  echo  '<div class="panel-body">
    <div class = "row">
    <div class ="col-md-4">
- <b>Prefered Skills</b>: '.$skill_1_emp.','.$skill_2_emp.','.$skill_3_emp.'
+ <b>Skills</b>: '.$skill_1_emp.','.$skill_2_emp.','.$skill_3_emp.'
 </div>
 
 <div class ="col-md-4">
- <b>Location</b>: '.$loc_job.'
+ <b>Desired Location</b>: '.$loc_job.'
 </div>
 
 <div class ="col-md-4">
- <b>Ctc offered</b>: '.$off_ctc_job.'
+ <b>Desired Ctc</b>: '.$off_ctc_job.'
 </div>
 
 </div>
